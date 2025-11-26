@@ -29,7 +29,8 @@ function sendCookie(token) {
   console.log("Cookie sent to parent!");
 }
 
-document.getElementById("btn").addEventListener("click", sendCookie(token);
+document.getElementById("btn").addEventListener("click", () => sendCookie(token));
+
 
 
 
