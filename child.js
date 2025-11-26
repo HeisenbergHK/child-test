@@ -11,7 +11,6 @@ document.getElementById("statusMsg").textContent = "Received: " + event.data;
 
 // Send message to parent
 function sendToParent() {
-console.log("Sending message to parent...");
 window.parent.postMessage("Hello from child!", "https://parent-site.w3spaces.com/");
 console.log("Message sent to parent!");
 }
