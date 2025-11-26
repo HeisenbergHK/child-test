@@ -20,10 +20,10 @@ document.getElementById("btn").addEventListener("click", sendToParent);
 
 
 // Set cookie for 7 days
-function setAccessToken(token) {
-const expires = new Date(Date.now() + 7 * 86400000).toUTCString();
-document.cookie = `access_token_child=${token}; expires=${expires}; path=/; Secure; SameSite=Strict`;
-}
+// function setAccessToken(token) {
+// const expires = new Date(Date.now() + 7 * 86400000).toUTCString();
+// document.cookie = `access_token_child=${token}; expires=${expires}; path=/; Secure; SameSite=Strict`;
+// }
 
 
-setAccessToken("child");
+// setAccessToken("child");
