@@ -3,7 +3,9 @@ console.log("child.js loaded");
 
 // Listen for messages from parent
 window.addEventListener("message", function (event) {
-// if (event.origin !== "https://parent-site.w3spaces.com/") return;
+if (event.origin !== "https://parent-site.w3spaces.com/") {
+  console.log(event)
+};
 console.log("Message from parent:", event.data);
 document.getElementById("statusMsg").textContent = "Received: " + event.data;
 });
