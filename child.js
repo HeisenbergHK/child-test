@@ -3,7 +3,7 @@ console.log("child.js loaded");
 
 // Listen for messages from parent
 window.addEventListener("message", function (event) {
-if (event.origin !== "http://192.168.100.162:2000") return;
+if (event.origin !== "https://parent-site.w3spaces.com/") return;
 console.log("Message from parent:", event.data);
 document.getElementById("statusMsg").textContent = "Received: " + event.data;
 });
@@ -12,7 +12,7 @@ document.getElementById("statusMsg").textContent = "Received: " + event.data;
 // Send message to parent
 function sendToParent() {
 console.log("Sending message to parent...");
-window.parent.postMessage("Hello from child!", "http://192.168.100.162:2000");
+window.parent.postMessage("Hello from child!", "https://parent-site.w3spaces.com/");
 console.log("Message sent to parent!");
 }
 
