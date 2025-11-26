@@ -16,8 +16,6 @@ console.log("Message sent to parent!");
 }
 
 
-document.getElementById("btn").addEventListener("click", sendCookie);
-
 // After generating / reading the cookie
 const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWRtaW4iLCJkaXNwbGF5X25hbWUiOm51bGwsIm1ldGFkYXRhIjp7InJvbGUiOiJhZG1pbiIsInByb3ZpZGVyIjoiY3JlZGVudGlhbHMifSwiZXhwIjoxNzY1NDQzNDUyLCJpYXQiOjE3NjQxNDc0NTJ9.oY_omK06FB8oOvl645IR5Qal_o68d4oNR96V-9KN4Hk";
 
@@ -30,6 +28,8 @@ function sendCookie(token) {
 
   console.log("Cookie sent to parent!");
 }
+
+document.getElementById("btn").addEventListener("click", sendCookie(token);
 
 
 
