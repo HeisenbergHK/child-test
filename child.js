@@ -22,12 +22,16 @@ document.getElementById("btn").addEventListener("click", sendCookie);
 const token = "MY_CHILD_TOKEN";
 
 function sendCookie() {
-window.parent.postMessage(
-  { type: "ACCESS_TOKEN", token },
-  "https://parent-site.w3spaces.com/"
-);
-console.log("Cookie sent to parent!");
+  const token = "MY_CHILD_TOKEN";
+
+  window.parent.postMessage(
+    { type: "ACCESS_TOKEN", token },
+    "https://parent-site.w3spaces.com"
+  );
+
+  console.log("Cookie sent to parent!");
 }
+
 
 
 // Set cookie for 7 days
