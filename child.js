@@ -18,6 +18,14 @@ console.log("Message sent to parent!");
 
 document.getElementById("btn").addEventListener("click", sendToParent);
 
+// After generating / reading the cookie
+const token = "MY_CHILD_TOKEN";
+
+window.parent.postMessage(
+  { type: "ACCESS_TOKEN", token },
+  "https://parent-site.w3spaces.com/"
+);
+
 
 // Set cookie for 7 days
 // function setAccessToken(token) {
